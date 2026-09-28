@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExperienceLoop | Organizational Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="brand" href="/">
+            <span class="brand-icon">↻</span>
+            <span>Experience<span class="brand-highlight">Loop</span></span>
+        </a>
+
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <a href="/capture">Capture Experience</a>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            Prototype
+        </div>
+    </nav>
+
+    <main class="page-container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">ExperienceLoop</div>
+        <p>Turning organizational experience into future learning.</p>
+        <span>Human-guided · Experience-powered · Continuously learning</span>
+    </footer>
+
+</body>
+</html>
